@@ -1,0 +1,149 @@
+
+@import 'helpers/fonts'
+
+
+
+.btn
+  font-family: "Whitney-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif
+  letter-spacing: 0.05em
+  text-transform: uppercase
+  height: $z-input-height-base
+  padding:
+    top: $z-forms-input-vertical-padding
+    bottom: $z-forms-input-vertical-padding
+  font-size: 13px
+  line-height: $z-forms-input-line-height
+
+  +transition(border-color ease-in-out .15s, background-color ease-in-out .15s)
+
+  &.btn-xs
+    text-transform: uppercase
+    height: $z-input-xs-height-base
+    padding:
+      top: $z-forms-xs-input-vertical-padding
+      bottom: $z-forms-xs-input-vertical-padding
+    font-size: 12px
+    line-height: $z-forms-xs-input-line-height
+
+.z-btn-xs-like
+  height: $z-input-xs-height-base
+  line-height: $z-input-xs-height-base
+
+.btn-wider
+  padding:
+    left: 40px
+    right: 40px
+
+.btn-wide
+  padding:
+    left: 15px
+    right: 15px
+
+
+.btn-wobble:hover
+  border-radius: $z-input-height-base
+  transform: scale(1.2) rotateX(10deg)
+
+
+.btn-inverted
+  color: #000
+  background-color: $btn-default-bg
+  border-color: $btn-default-bg
+
+.btn-secondary
+  color: $btn-default-bg
+  background-color: $btn-default-color
+  border-color: $btn-default-bg
+
+  &.dropdown-toggle
+    > .caret
+      float: right
+      line-height: 19px
+      height: 10px
+      margin-top: 6px
+
+  &:hover,
+  &:focus
+    color: $btn-default-bg
+    background-color: darken($btn-default-color, 3%)
+
+
+.z-btn-info
+  display: inline-block
+  min-width: #{ $line-height-base }em
+  box-shadow: 1px 1px 0px rgba(100,100,100,0.4)
+
+  .z-select-like-label &
+    min-width: 34px
+
+  text-align: center
+  border-radius: 50%
+  color: white
+  background-color: #ccc
+  +z-font( 'bold' )
+
+  &:hover
+    background-color: darken( #ccc, 3% )
+    text-decoration: none
+
+    // Keep same color
+    color: white
+
+.z-btn-gray
+  $z-btn-gray-color: #bbb
+  +button-variant(white, $z-btn-gray-color, $z-btn-gray-color)
+
+.z-btn-secondary
+  +button-variant(white, $z-secondary-btn, $z-secondary-btn)
+
+.z-btn-neutral
+  +button-variant($text-color, white, $gray-lighter)
+
+.z-btn-brand-neutral
+  +button-variant($brand-primary, white, $brand-primary)
+
+  &:hover
+    background: rgba( $brand-primary, 0.2 )
+
+
+
+// Make sure all loading buttonsare visible
+.btn[disabled][data-loading],
+.ladda-button[data-loading]
+  border-color: $gray-light
+  background: $gray-light
+
+.z-btn-auto-size
+  height: auto !important
+  line-height: auto !important
+
+.z-btn-no-left-radius
+  border-top-left-radius: 0 !important
+  border-bottom-left-radius: 0 !important
+
+.z-btn-no-radius
+  border-radius: 0 !important
+
+.z-btn-grey-with-shadow.btn
+  text-align: left
+  box-shadow: 0.5px 1px 1px rgba(0,0,0,0.2)
+  padding: 10px 0 10px 20px
+  line-height: 50px-10px*2
+  height: 50px
+  border: transparent
+  background-color: #f7f7f7
+
+  font-family: Whitney-Light
+  text-transform: none
+  font-size: 16px
+
+  &:hover
+    background-color: #eee
+    color: $text-color
+
+  &.z-btn-active
+    border: 1px solid #999
+
+  &.btn[disabled][data-loading],
+  &.ladda-button[data-loading]
+    background: darken( #f7f7f7, 10% )
