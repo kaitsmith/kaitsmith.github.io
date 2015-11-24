@@ -1,0 +1,31 @@
+.container {
+	margin: 0 auto;
+}
+
+header {
+	background: red;
+	height: 100px;
+}
+
+section {
+	background: yellow;
+	height: 250px;
+	float: left;
+	width: 50%;
+}
+
+article {
+	background: green;
+	height: 100px;
+	width: 33%;
+	display: inline-block;
+}
+
+footer {
+	background: blue;
+	height: 100px;
+}
+
+.clear {
+	clear: both;
+}

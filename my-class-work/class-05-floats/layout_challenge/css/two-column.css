@@ -1,0 +1,25 @@
+header {
+	background: red;
+	height: 100px;
+}
+
+main {
+	background: yellow;
+	height: 250px;
+	float: left;
+	width: 60%;
+	
+}
+
+aside {
+	background: green;
+	height: 250px;
+	float: right;
+	width: 40%;
+}
+
+footer {
+	background: blue;
+	height: 100px;
+	clear: both;
+}
