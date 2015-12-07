@@ -1,3 +1,5 @@
+// Good Start. See if can duplicate your add10 function for other math operations.
+
 $(document).ready(function () {
 
 	var total = 0;
